@@ -1,5 +1,5 @@
 # ig-news
 
-#### Ig.news é uma aplicação desenvolvida para estudos, com integração de pagamento via stripe e banco de dados faunadb.
+#### Ig.news é uma aplicação desenvolvida para estudos, com integração de pagamento via stripe, banco de dados faunadb e login usando github.
 
 ![imagem ignews](https://i.imgur.com/Lxtbzul.png)
