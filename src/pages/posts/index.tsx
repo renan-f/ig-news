@@ -46,12 +46,14 @@ export const getStaticProps: GetStaticProps = async () => {
     const fieldsDocument = [`${nameDocument}.title`, `${nameDocument}.content`];
     const prismic = getPrismicClient();
 
-    const response = await prismic.query([
-        Prismic.Predicates.at('document.type', nameDocument)
-    ], {
-        fetch: fieldsDocument,
-        pageSize: 100,
-    }
+    const response = await prismic.query(
+        [
+            Prismic.Predicates.at('document.type', nameDocument)
+        ],
+        {
+            fetch: fieldsDocument,
+            pageSize: 100,
+        }
     );
 
     console.log(JSON.stringify(response, null, 2));
